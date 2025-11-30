@@ -1,0 +1,316 @@
+[
+  {
+    "CONVERTED_SCRIPT": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='disabled\\:bg-primary'], [class*=' disabled\\:bg-primary']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=.rounded-\\[8px\\]",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:gap-large > :nth-child(1)",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "open",
+        "target": "https://smember.com.vn/login",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:gap-large > :nth-child(2) .hidden",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "1000"
+      },
+      {
+        "command": "open",
+        "target": "https://smember.com.vn/login",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='cpsui\\:text-info'], [class*=' cpsui\\:text-info']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "dblclick",
+        "target": "css=[data-slot='input']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[data-slot='input']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "type",
+        "target": "css=[data-slot='input']",
+        "value": "0793450521"
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='cpsui\\:border-primary'], [class*=' cpsui\\:border-primary']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "dblclick",
+        "target": "css=[data-slot='input']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "fill",
+        "target": "css=[data-slot='input']",
+        "value": "0793450529"
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='cpsui\\:border-primary'], [class*=' cpsui\\:border-primary']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "open",
+        "target": "https://smember.com.vn/login",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập số điện thoại của bạn']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "fill",
+        "target": "css=[placeholder='Nhập số điện thoại của bạn']",
+        "value": "0793450529"
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[type='password']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "fill",
+        "target": "css=[type='password']",
+        "value": "Haipro"
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='cpsui\\:border-primary'], [class*=' cpsui\\:border-primary']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "dblclick",
+        "target": "css=[type='password']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "fill",
+        "target": "css=[type='password']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='cpsui\\:border-primary'], [class*=' cpsui\\:border-primary']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "fill",
+        "target": "css=[placeholder='Nhập số điện thoại của bạn']",
+        "value": "1"
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[type='password']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "fill",
+        "target": "css=[type='password']",
+        "value": "Haipro123"
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='cpsui\\:border-primary'], [class*=' cpsui\\:border-primary']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập số điện thoại của bạn']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "fill",
+        "target": "css=[placeholder='Nhập số điện thoại của bạn']",
+        "value": "0793450529"
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='cpsui\\:border-primary'], [class*=' cpsui\\:border-primary']",
+        "value": ""
+      },
+      {
+        "command": "wait",
+        "target": "",
+        "value": "2000"
+      },
+      {
+        "command": "close",
+        "target": "",
+        "value": ""
+      }
+    ]
+  }
+]
