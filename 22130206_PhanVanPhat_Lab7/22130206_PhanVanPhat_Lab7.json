@@ -1,0 +1,944 @@
+[
+  {
+    "IM-INFO-UPDATE-01": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.mb-1x-small [stroke='currentColor']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn giới tính']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(1)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[type='submit']",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-INFO-UPDATE-02": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.mb-1x-small span",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn địa chỉ mặc định']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(1)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[type='submit']",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-INFO-UPDATE-03": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='tablet\\:p'], [class*=' tablet\\:p'] > :nth-child(2) > :nth-child(1) span",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[aria-controls^='radix-'] [stroke='currentColor']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=text=Thêm địa chỉ",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn Tỉnh/Thành phố']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(3)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn Quận/Huyện']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(7)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn Phường/Xã']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(5)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập địa chỉ nhà']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập địa chỉ nhà']",
+        "value": "112"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Đặt tên gợi nhớ']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Đặt tên gợi nhớ']",
+        "value": "Nhà"
+      },
+      {
+        "command": "click",
+        "target": "css=.px-3x-small > :nth-child(1)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:px-medium",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-INFO-UPDATE-04": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=text=Thêm địa chỉ",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn Tỉnh/Thành phố']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(2)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn Quận/Huyện']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(1)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập địa chỉ nhà']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.px-3x-small > :nth-child(1)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:px-medium",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-INFO-UPDATE-05": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='tablet\\:p'], [class*=' tablet\\:p'] > :nth-child(2) .grid > :nth-child(1) .cpsui\\:border-pure-white",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn Quận/Huyện']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(1)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn Phường/Xã']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:p-2x-small > :nth-child(3)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập địa chỉ nhà']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập địa chỉ nhà']",
+        "value": "112"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Đặt tên gợi nhớ']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Đặt tên gợi nhớ']",
+        "value": "Nhà ông C (Gần Chợ)"
+      },
+      {
+        "command": "click",
+        "target": "css=.px-3x-small [class^='border-neutral'], [class*=' border-neutral']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[type='submit']",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-ADDRESS-ADD-01": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='tablet\\:p'], [class*=' tablet\\:p'] > :nth-child(2) .grid > :nth-child(2) .cpsui\\:border-pure-white",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.px-3x-small [class^='border-neutral'], [class*=' border-neutral']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Đặt tên gợi nhớ']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Đặt tên gợi nhớ']",
+        "value": "Văn Phòng 01"
+      },
+      {
+        "command": "click",
+        "target": "css=[role='switch']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[type='submit']",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-ADDRESS-ADD-02": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='tablet\\:p'], [class*=' tablet\\:p'] > :nth-child(2) .grid > :nth-child(4) .cpsui\\:border-pure-white",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập địa chỉ nhà']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Chọn Phường/Xã']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[data-slot='sheet-overlay']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[aria-controls^='radix-'] [d='M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[data-slot='sheet-overlay']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[type='submit']",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-ADDRESS-DELETE-01": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .w-full",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=text=Xóa",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=text=Xóa địa chỉ",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-PASS-CHANGE-01": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.mt-small > :nth-child(1) span",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập mật khẩu cũ của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập mật khẩu cũ của bạn']",
+        "value": "@Pvp1292005"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập mật khẩu mới của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập mật khẩu mới của bạn']",
+        "value": "@Pvp1292004"
+      },
+      {
+        "command": "click",
+        "target": "css=.overflow-auto .flex > :nth-child(3) .cpsui\\:p-1x-small",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập lại mật khẩu mới của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập lại mật khẩu mới của bạn']",
+        "value": "@Pvp1292004"
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:px-medium",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-PASS-CHANGE-02": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.mt-small > :nth-child(1) span",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập mật khẩu cũ của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập mật khẩu cũ của bạn']",
+        "value": "pvp1292004"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập mật khẩu mới của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập mật khẩu mới của bạn']",
+        "value": "@Pvp1292004"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập lại mật khẩu mới của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập lại mật khẩu mới của bạn']",
+        "value": "@Pvp1292004"
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:px-medium",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "IM-PASS-CHANGE-03": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=button[data-slot='popover-trigger']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(10) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.mt-small > :nth-child(1) span",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập mật khẩu cũ của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập mật khẩu cũ của bạn']",
+        "value": "@Pvp1292004"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập mật khẩu mới của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập mật khẩu mới của bạn']",
+        "value": "@12345pvp"
+      },
+      {
+        "command": "click",
+        "target": "css=.overflow-auto .flex > :nth-child(3) .cpsui\\:p-1x-small",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Nhập lại mật khẩu mới của bạn']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Nhập lại mật khẩu mới của bạn']",
+        "value": "vsdsvsdmvdksmvksds"
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:px-medium",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "OH-DETAIL-01": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='disabled\\:bg-primary'], [class*=' disabled\\:bg-primary']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(2) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:gap-small > :nth-child(1) .text-ellipsis",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "OH-FILTER-01": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='disabled\\:bg-primary'], [class*=' disabled\\:bg-primary']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(2) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Từ ngày']",
+        "value": ""
+      },
+      {
+        "command": "setValue",
+        "target": "css=[placeholder='Từ ngày']",
+        "value": "05/12/2023y"
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Đến ngày']",
+        "value": ""
+      },
+      {
+        "command": "setValue",
+        "target": "css=[placeholder='Đến ngày']",
+        "value": "05/12/2024y"
+      }
+    ]
+  },
+  {
+    "OH-FILTER-02": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='disabled\\:bg-primary'], [class*=' disabled\\:bg-primary']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(2) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Từ ngày']",
+        "value": ""
+      },
+      {
+        "command": "type",
+        "target": "css=[placeholder='Từ ngày']",
+        "value": "01/10/2010"
+      }
+    ]
+  },
+  {
+    "OH-FILTER-03": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='disabled\\:bg-primary'], [class*=' disabled\\:bg-primary']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(2) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[placeholder='Từ ngày']",
+        "value": ""
+      },
+      {
+        "command": "setValue",
+        "target": "css=[placeholder='Từ ngày']",
+        "value": "01/1m/2yyy"
+      }
+    ]
+  },
+  {
+    "OH-FILTER-04": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='disabled\\:bg-primary'], [class*=' disabled\\:bg-primary']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(2) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[dir='ltr'] .w-full > :nth-child(2)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[dir='ltr'] .w-full > :nth-child(3)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[dir='ltr'] .w-full > :nth-child(4)",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[dir='ltr'] .w-full > :nth-child(5)",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "OH-VAT-01": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='disabled\\:bg-primary'], [class*=' disabled\\:bg-primary']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(2) .font-medium",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:gap-small > :nth-child(1) .tablet\\:flex-row > :nth-child(1) .text-neutral-800",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[type='button']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "text=Xem hóa đơn VAT",
+        "value": ""
+      }
+    ]
+  },
+  {
+    "OH-REORDER-01": [
+      {
+        "command": "open",
+        "target": "https://cellphones.com.vn/",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=[class^='disabled\\:bg-primary'], [class*=' disabled\\:bg-primary']",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.m-2\\.5",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.w-\\[280px\\] .justify-between > :nth-child(1) > :nth-child(2) .w-full",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.tablet\\:gap-small > :nth-child(1) .text-ellipsis",
+        "value": ""
+      },
+      {
+        "command": "click",
+        "target": "css=.cpsui\\:bg-pure-white",
+        "value": ""
+      },
+      {
+        "command": "scroll",
+        "target": "window",
+        "value": "0,0"
+      }
+    ]
+  }
+]
