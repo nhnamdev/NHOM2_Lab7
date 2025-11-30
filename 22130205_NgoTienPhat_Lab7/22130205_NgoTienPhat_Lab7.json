@@ -1,0 +1,83 @@
+{
+  "testSuite": {
+    "name": "CellPhoneS - Testing Payment and Discount Code",
+    "description": "Automation testing for CellPhoneS website payment and discount functionality",
+    "author": "22130205_NgoTienPhat",
+    "website": "https://cellphones.com.vn/",
+    "framework": "Playwright",
+    "testCases": [
+      {
+        "id": "TC01",
+        "title": "Kiểm tra chức năng đăng nhập và thanh toán sản phẩm",
+        "description": "Test login functionality and payment process for iPhone Air 256GB",
+        "steps": [
+          "Truy cập website CellPhoneS",
+          "Đăng nhập với tài khoản test",
+          "Thêm sản phẩm iPhone Air 256GB vào giỏ hàng",
+          "Vào giỏ hàng và tiến hành thanh toán",
+          "Điền thông tin giao hàng",
+          "Chọn phương thức thanh toán COD",
+          "Hoàn tất đặt hàng"
+        ],
+        "testData": {
+          "phoneNumber": "0334286049",
+          "password": "matkhau12357890",
+          "product": "iPhone Air 256GB",
+          "paymentMethod": "COD",
+          "address": {
+            "district": "Quận 9",
+            "ward": "Phường Tăng Nhơn Phú A", 
+            "street": "144/27 Man Thiện"
+          }
+        },
+        "expectedResult": "Đặt hàng thành công",
+        "timeout": 180000
+      },
+      {
+        "id": "TC02", 
+        "title": "Kiểm tra chức năng áp mã giảm giá",
+        "description": "Test discount code application functionality",
+        "steps": [
+          "Đăng nhập vào website",
+          "Thêm sản phẩm vào giỏ hàng", 
+          "Vào trang giỏ hàng",
+          "Thử áp dụng các mã giảm giá",
+          "Kiểm tra thông báo kết quả"
+        ],
+        "testData": {
+          "discountCodes": ["VNPAY100K", "MOMO100", "ZALOPAY50", "DISCOUNT10"],
+          "product": "iPhone Air 256GB"
+        },
+        "expectedResult": "Hiển thị thông báo phù hợp cho mỗi mã giảm giá",
+        "timeout": 180000
+      }
+    ],
+    "configuration": {
+      "browser": "chromium",
+      "headless": false,
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "timeout": 30000,
+      "retries": 2
+    },
+    "selectors": {
+      "loginButton": "[class^='disabled:bg-primary'], [class*=' disabled:bg-primary']",
+      "loginModal": ".rounded-\\[8px\\]",
+      "phoneInput": "[placeholder='Nhập số điện thoại của bạn']",
+      "passwordInput": "[type='password']",
+      "submitLogin": "[class^='cpsui:border-primary'], [class*=' cpsui:border-primary']",
+      "productImage": "[alt='iPhone Air 256GB | Chính hãng']",
+      "addToCartButton": ".button-add-to-cart [fill='none']",
+      "buyNowButton": "button:has-text('Mua ngay')",
+      "cartUrl": "https://cellphones.com.vn/cart/",
+      "shippingMethod": "#payment-info-method-shipping",
+      "districtDropdown": "[placeholder='Chọn quận/huyện']",
+      "wardDropdown": "[placeholder='Chọn phường/xã']",
+      "streetInput": "[placeholder='Số nhà, tên đường (Vui lòng chọn quận/huyện và phường/xã trước)']",
+      "codPayment": ".list-payment__item-cod",
+      "finalSubmit": ".block-info .btn"
+    }
+  }
+}
