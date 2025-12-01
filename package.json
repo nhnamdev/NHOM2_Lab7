@@ -1,0 +1,24 @@
+{
+  "name": "nhom2_lab7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhnamdev/NHOM2_Lab7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nhnamdev/NHOM2_Lab7/issues"
+  },
+  "homepage": "https://github.com/nhnamdev/NHOM2_Lab7#readme",
+  "dependencies": {
+    "playwright": "^1.57.0"
+  }
+}
