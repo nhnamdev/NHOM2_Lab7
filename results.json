@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\playwright.config.js",
-    "rootDir": "D:/Vibeconding/automation_git_lab8/NHOM2_Lab7/playwright/tests",
+    "configFile": "D:\\a_ki1_nam4\\Tester\\testlai\\NHOM2_Lab7\\playwright\\playwright.config.js",
+    "rootDir": "D:/a_ki1_nam4/Tester/testlai/NHOM2_Lab7/playwright/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -40,7 +40,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "D:/Vibeconding/automation_git_lab8/NHOM2_Lab7/playwright/test-results",
+        "outputDir": "D:/a_ki1_nam4/Tester/testlai/NHOM2_Lab7/playwright/test-results",
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
@@ -48,7 +48,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "D:/Vibeconding/automation_git_lab8/NHOM2_Lab7/playwright/tests",
+        "testDir": "D:/a_ki1_nam4/Tester/testlai/NHOM2_Lab7/playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -94,7 +94,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 15853,
+                      "duration": 15826,
                       "errors": [],
                       "stdout": [
                         {
@@ -118,7 +118,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:35:12.526Z",
+                      "startTime": "2025-12-02T13:53:43.717Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -147,7 +147,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8717,
+                      "duration": 9572,
                       "errors": [],
                       "stdout": [
                         {
@@ -156,7 +156,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:35:28.656Z",
+                      "startTime": "2025-12-02T13:53:59.840Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -185,7 +185,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8714,
+                      "duration": 8942,
                       "errors": [],
                       "stdout": [
                         {
@@ -194,7 +194,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:35:37.392Z",
+                      "startTime": "2025-12-02T13:54:09.427Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -223,7 +223,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8283,
+                      "duration": 8052,
                       "errors": [],
                       "stdout": [
                         {
@@ -232,7 +232,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:35:46.121Z",
+                      "startTime": "2025-12-02T13:54:18.385Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -261,7 +261,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8633,
+                      "duration": 8573,
                       "errors": [],
                       "stdout": [
                         {
@@ -270,7 +270,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:35:54.420Z",
+                      "startTime": "2025-12-02T13:54:26.452Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -299,7 +299,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9659,
+                      "duration": 8398,
                       "errors": [],
                       "stdout": [
                         {
@@ -308,7 +308,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:36:03.071Z",
+                      "startTime": "2025-12-02T13:54:35.042Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -354,7 +354,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 46641,
+                      "duration": 43066,
                       "errors": [],
                       "stdout": [
                         {
@@ -373,10 +373,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -399,7 +399,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:36:12.766Z",
+                      "startTime": "2025-12-02T13:54:43.474Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -428,7 +428,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 62607,
+                      "duration": 59057,
                       "errors": [],
                       "stdout": [
                         {
@@ -447,10 +447,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -459,10 +459,10 @@
                           "text": "  ✓ Đã thêm vào giỏ hàng\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -488,7 +488,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:36:59.431Z",
+                      "startTime": "2025-12-02T13:55:26.556Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -517,7 +517,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 33776,
+                      "duration": 32603,
                       "errors": [],
                       "stdout": [
                         {
@@ -559,7 +559,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:38:02.053Z",
+                      "startTime": "2025-12-02T13:56:25.632Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -588,7 +588,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 34753,
+                      "duration": 32825,
                       "errors": [],
                       "stdout": [
                         {
@@ -630,7 +630,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:38:35.847Z",
+                      "startTime": "2025-12-02T13:56:58.253Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -676,7 +676,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 42769,
+                      "duration": 40621,
                       "errors": [],
                       "stdout": [
                         {
@@ -695,10 +695,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -721,7 +721,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:39:10.630Z",
+                      "startTime": "2025-12-02T13:57:31.106Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -750,7 +750,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 42787,
+                      "duration": 40547,
                       "errors": [],
                       "stdout": [
                         {
@@ -769,10 +769,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -789,7 +789,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:39:53.414Z",
+                      "startTime": "2025-12-02T13:58:11.742Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -835,7 +835,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 48083,
+                      "duration": 46315,
                       "errors": [],
                       "stdout": [
                         {
@@ -854,10 +854,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -889,7 +889,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:40:36.229Z",
+                      "startTime": "2025-12-02T13:58:52.319Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -918,7 +918,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 52029,
+                      "duration": 49663,
                       "errors": [],
                       "stdout": [
                         {
@@ -937,10 +937,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -978,7 +978,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:41:24.329Z",
+                      "startTime": "2025-12-02T13:59:38.650Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1007,7 +1007,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 47493,
+                      "duration": 44877,
                       "errors": [],
                       "stdout": [
                         {
@@ -1026,10 +1026,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -1055,7 +1055,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:42:16.375Z",
+                      "startTime": "2025-12-02T14:00:28.328Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1101,7 +1101,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 47119,
+                      "duration": 44745,
                       "errors": [],
                       "stdout": [
                         {
@@ -1120,10 +1120,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -1132,7 +1132,7 @@
                           "text": "  ✓ Đã thêm vào giỏ hàng\n"
                         },
                         {
-                          "text": "  Sản phẩm đầu tiên: iPhone 14 (128GB)  | Chính hãng VN/A-Xanh\n"
+                          "text": "  Sản phẩm đầu tiên: Xiaomi Redmi Note 13 Pro 8GB 256GB - Xanh lá\n"
                         },
                         {
                           "text": "✅ Test PASSED: Có 1 sản phẩm trong giỏ\n"
@@ -1149,7 +1149,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:43:03.895Z",
+                      "startTime": "2025-12-02T14:01:13.233Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1178,7 +1178,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 45838,
+                      "duration": 44149,
                       "errors": [],
                       "stdout": [
                         {
@@ -1197,10 +1197,10 @@
                           "text": "✅ Đăng nhập thành công!\n"
                         },
                         {
-                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                          "text": "🛒 Thêm sản phẩm \"Xiaomi Redmi Note 13\" vào giỏ hàng...\n"
                         },
                         {
-                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                          "text": "  ✓ Đã nhập từ khóa: Xiaomi Redmi Note 13\n"
                         },
                         {
                           "text": "  ✓ Đã click vào sản phẩm\n"
@@ -1223,7 +1223,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:43:51.030Z",
+                      "startTime": "2025-12-02T14:01:57.993Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1269,7 +1269,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 41517,
+                      "duration": 40251,
                       "errors": [],
                       "stdout": [
                         {
@@ -1309,7 +1309,7 @@
                           "text": "  ✓ Đã click \"So sánh ngay\"\n"
                         },
                         {
-                          "text": "  ✓ URL: https://cellphones.com.vn/so-sanh/samsung-galaxy-s24-ultra\n"
+                          "text": "  ✓ URL: https://cellphones.com.vn/so-sanh/samsung-galaxy-s24-ultra-12gb-256gb-cu-dep\n"
                         },
                         {
                           "text": "✅ Test PASSED: So sánh sản phẩm thành công\n"
@@ -1317,7 +1317,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:44:36.892Z",
+                      "startTime": "2025-12-02T14:02:42.177Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1346,7 +1346,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 31118,
+                      "duration": 30465,
                       "errors": [],
                       "stdout": [
                         {
@@ -1394,7 +1394,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:45:18.429Z",
+                      "startTime": "2025-12-02T14:03:22.442Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1440,7 +1440,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 35030,
+                      "duration": 32859,
                       "errors": [],
                       "stdout": [
                         {
@@ -1470,7 +1470,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:45:49.587Z",
+                      "startTime": "2025-12-02T14:03:52.937Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1499,7 +1499,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 27778,
+                      "duration": 25948,
                       "errors": [],
                       "stdout": [
                         {
@@ -1523,7 +1523,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:46:24.628Z",
+                      "startTime": "2025-12-02T14:04:25.810Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1552,7 +1552,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 22135,
+                      "duration": 21021,
                       "errors": [],
                       "stdout": [
                         {
@@ -1567,7 +1567,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:46:52.425Z",
+                      "startTime": "2025-12-02T14:04:51.772Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1613,7 +1613,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 43064,
+                      "duration": 42059,
                       "errors": [],
                       "stdout": [
                         {
@@ -1649,7 +1649,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:47:14.591Z",
+                      "startTime": "2025-12-02T14:05:12.819Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1678,7 +1678,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 30355,
+                      "duration": 28902,
                       "errors": [],
                       "stdout": [
                         {
@@ -1708,7 +1708,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:47:57.668Z",
+                      "startTime": "2025-12-02T14:05:54.891Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1754,7 +1754,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 24478,
+                      "duration": 21628,
                       "errors": [],
                       "stdout": [
                         {
@@ -1796,7 +1796,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:48:28.051Z",
+                      "startTime": "2025-12-02T14:06:23.820Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1825,7 +1825,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 27566,
+                      "duration": 26881,
                       "errors": [],
                       "stdout": [
                         {
@@ -1862,13 +1862,13 @@
                           "text": "  ✓ Đã áp dụng bộ lọc giá\n"
                         },
                         {
-                          "text": "  ✓ Tìm thấy 4 sản phẩm với selector: .product-item\n"
+                          "text": "  ✓ Tìm thấy 3 sản phẩm với selector: .product-item\n"
                         },
                         {
-                          "text": "  ✓ Lấy được 4 tên sản phẩm\n"
+                          "text": "  ✓ Lấy được 3 tên sản phẩm\n"
                         },
                         {
-                          "text": "  ✓ Tìm thấy 4 sản phẩm trong khoảng giá\n"
+                          "text": "  ✓ Tìm thấy 3 sản phẩm trong khoảng giá\n"
                         },
                         {
                           "text": "✅ Test PASSED: Lọc theo giá thành công\n"
@@ -1876,7 +1876,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:48:52.544Z",
+                      "startTime": "2025-12-02T14:06:45.464Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1905,7 +1905,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 24123,
+                      "duration": 21570,
                       "errors": [],
                       "stdout": [
                         {
@@ -1935,7 +1935,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:49:20.122Z",
+                      "startTime": "2025-12-02T14:07:12.358Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1980,17 +1980,9 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 65679,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 59547,
+                      "errors": [],
                       "stdout": [
                         {
                           "text": "📋 Đọc được 5 keywords từ file\n"
@@ -2014,7 +2006,7 @@
                           "text": "  ✓ Tìm thấy 5 sản phẩm\n"
                         },
                         {
-                          "text": "  Sản phẩm đầu tiên: iPhone 13 128GB | Chính hãng VN/A\n"
+                          "text": "  Sản phẩm đầu tiên: iPhone 13 Pro Max 128GB | Chính hãng VN/A\n"
                         },
                         {
                           "text": "\n🔍 Tìm kiếm: \"iPhone\"\n"
@@ -2103,155 +2095,12 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:49:44.274Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\test-results\\search-search-keywords-Sea-5e664--với-nhiều-keywords-từ-file-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\test-results\\search-search-keywords-Sea-5e664--với-nhiều-keywords-từ-file-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\test-results\\search-search-keywords-Sea-5e664--với-nhiều-keywords-từ-file-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\test-results\\search-search-keywords-Sea-5e664--với-nhiều-keywords-từ-file-chromium\\trace.zip"
-                        }
-                      ]
-                    },
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 59431,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "📋 Đọc được 5 keywords từ file\n"
-                        },
-                        {
-                          "text": "\n🔍 Tìm kiếm: \"iPhone 13\"\n"
-                        },
-                        {
-                          "text": "🔍 Tìm kiếm: \"iPhone 13\"\n"
-                        },
-                        {
-                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
-                        },
-                        {
-                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
-                        },
-                        {
-                          "text": "  Sản phẩm đầu tiên: iPhone 13 128GB | Chính hãng VN/A\n"
-                        },
-                        {
-                          "text": "\n🔍 Tìm kiếm: \"iPhone\"\n"
-                        },
-                        {
-                          "text": "🔍 Tìm kiếm: \"iPhone\"\n"
-                        },
-                        {
-                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
-                        },
-                        {
-                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
-                        },
-                        {
-                          "text": "  Sản phẩm đầu tiên: Điện thoại iPhone 16 Pro Max 256GB\n"
-                        },
-                        {
-                          "text": "\n🔍 Tìm kiếm: \"ABCXYZ123\"\n"
-                        },
-                        {
-                          "text": "🔍 Tìm kiếm: \"ABCXYZ123\"\n"
-                        },
-                        {
-                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 1 sản phẩm với selector: div[class*=\"product\"]\n"
-                        },
-                        {
-                          "text": "  ✓ Lấy được 0 tên sản phẩm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 0 sản phẩm\n"
-                        },
-                        {
-                          "text": "\n🔍 Tìm kiếm: \"Samsung Galaxy\"\n"
-                        },
-                        {
-                          "text": "🔍 Tìm kiếm: \"Samsung Galaxy\"\n"
-                        },
-                        {
-                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
-                        },
-                        {
-                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
-                        },
-                        {
-                          "text": "  Sản phẩm đầu tiên: Samsung Galaxy Z Flip7 12GB 256GB\n"
-                        },
-                        {
-                          "text": "\n🔍 Tìm kiếm: \"Macbook\"\n"
-                        },
-                        {
-                          "text": "🔍 Tìm kiếm: \"Macbook\"\n"
-                        },
-                        {
-                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
-                        },
-                        {
-                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
-                        },
-                        {
-                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
-                        },
-                        {
-                          "text": "  Sản phẩm đầu tiên: Apple MacBook Air M2 2024 8CPU 8GPU 16GB 256GB I Chính hãng Apple Việt Nam\n"
-                        },
-                        {
-                          "text": "\n✅ Test PASSED: Tìm kiếm với tất cả keywords thành công\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2025-12-02T12:50:59.354Z",
+                      "startTime": "2025-12-02T14:07:33.958Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "flaky"
+                  "status": "expected"
                 }
               ],
               "id": "ee54d2246e8eafe877c9-e7a5021ab8b6e2b428d8",
@@ -2272,10 +2121,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9827,
+                      "duration": 9796,
                       "errors": [],
                       "stdout": [
                         {
@@ -2299,7 +2148,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:51:59.084Z",
+                      "startTime": "2025-12-02T14:08:33.520Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2325,10 +2174,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 10589,
+                      "duration": 10408,
                       "errors": [],
                       "stdout": [
                         {
@@ -2349,7 +2198,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-02T12:52:08.929Z",
+                      "startTime": "2025-12-02T14:08:43.329Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2369,11 +2218,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-02T12:35:11.134Z",
-    "duration": 1028973.909,
-    "expected": 29,
+    "startTime": "2025-12-02T13:53:42.533Z",
+    "duration": 913330.435,
+    "expected": 30,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 1
+    "flaky": 0
   }
 }
