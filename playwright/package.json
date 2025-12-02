@@ -1,0 +1,25 @@
+{
+  "name": "cellphones-playwright-tests",
+  "version": "1.0.0",
+  "description": "Unified Playwright test suite for Cellphones.com.vn - consolidating all team member test cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:auth": "playwright test tests/auth",
+    "test:cart": "playwright test tests/cart",
+    "test:search": "playwright test tests/search",
+    "test:newsletter": "playwright test tests/newsletter",
+    "test:comparison": "playwright test tests/comparison",
+    "test:payment": "playwright test tests/payment",
+    "report": "playwright show-report"
+  },
+  "keywords": ["playwright", "testing", "automation", "cellphones"],
+  "author": "NHOM2_Lab7",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}

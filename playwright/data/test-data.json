@@ -1,0 +1,35 @@
+{
+  "validUser": {
+    "phone": "0858200725",
+    "password": "Migi2004@"
+  },
+  "testUsers": [
+    {
+      "phone": "0793450529",
+      "password": "Haipro123"
+    },
+    {
+      "phone": "0334286049",
+      "password": "matkhau12357890"
+    }
+  ],
+  "newsletter": {
+    "validEmail": "22130294@st.hcmuaf.edu.vn",
+    "validPhone": "0849632852",
+    "invalidEmail": "22130294"
+  },
+  "products": {
+    "available": "iPhone 14",
+    "outOfStock": "iPhone 11 Pro Max 256GB I Chính hãng VN/A",
+    "contactForPrice": "Macbook Pro 14 M3 Max 128GB - 8TB | Chính hãng Apple Việt Nam",
+    "comparison": "Samsung Galaxy S24 Ultra"
+  },
+  "payment": {
+    "address": {
+      "district": "9",
+      "ward": "Tăng",
+      "street": "144/27 Man Thiện"
+    },
+    "discountCodes": ["VNPAY100K", "MOMO100", "ZALOPAY50", "DISCOUNT10"]
+  }
+}
