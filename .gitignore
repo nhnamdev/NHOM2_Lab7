@@ -31,11 +31,27 @@ wheels/
 .installed.cfg
 *.egg
 
+
+
 # Playwright
+test-results/
+playwright-report/
 playwright/.cache/
 .playwright/
 
 # IDE
+
+screenshots/
+reports/
+allure-results/
+allure-report/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.webm
+
 .vscode/
 .idea/
 *.swp
