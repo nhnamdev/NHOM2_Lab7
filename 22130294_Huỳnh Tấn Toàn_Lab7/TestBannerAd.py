@@ -16,6 +16,80 @@ def setup_driver():
     driver = webdriver.Chrome(service=service, options=chrome_options)
     return driver
 
+def scroll_from_top_to_bottom(driver):
+    print("-> Bắt đầu cuộn từ đầu trang xuống cuối trang...")
+    # Cuộn về đầu trang trước
+    driver.execute_script("window.scrollTo(0, 0);")
+    time.sleep(1)
+    
+    last_height = driver.execute_script("return document.body.scrollHeight")
+    current_position = 0
+    scroll_step = 500 # Pixel mỗi lần cuộn
+    
+    while current_position < last_height:
+        current_position += scroll_step
+        driver.execute_script(f"window.scrollTo(0, {current_position});")
+        time.sleep(0.5) # Chờ load nội dung
+        
+        # Cập nhật chiều cao trang nếu có lazy load
+        new_height = driver.execute_script("return document.body.scrollHeight")
+        if new_height > last_height:
+            last_height = new_height
+
+    print("-> Đã cuộn đến cuối trang.")
+
+def print_promotion_info(driver):
+    print("-> Đang lấy thông tin khuyến mãi...")
+    try:
+        # Tìm các thẻ chứa thông tin sản phẩm
+        # Thử nhiều selector khác nhau để bắt được sản phẩm
+        xpaths = [
+            "//div[contains(@class, 'product-item')]",
+            "//div[contains(@class, 'item-product')]",
+            "//div[contains(@class, 'product-info')]/ancestor::div[contains(@class, 'item')]",
+            "//div[contains(@class, 'cps-product-item')]"
+        ]
+        
+        product_items = []
+        for xpath in xpaths:
+            product_items = driver.find_elements(By.XPATH, xpath)
+            if len(product_items) > 0:
+                break
+        
+        if not product_items:
+            print("⚠️ Không tìm thấy sản phẩm nào với các selector thông thường.")
+            return
+
+        print(f"-> Tìm thấy {len(product_items)} sản phẩm hiển thị.")
+        
+        count = 0
+        for item in product_items:
+            try:
+                # Lấy tên (thường là thẻ h3 hoặc div có class name/title)
+                name = ""
+                try:
+                    name_el = item.find_element(By.XPATH, ".//div[contains(@class, 'name') or contains(@class, 'title')] | .//h3")
+                    name = name_el.text.strip()
+                except:
+                    pass
+                
+                # Lấy giá
+                price = ""
+                try:
+                    price_el = item.find_element(By.XPATH, ".//div[contains(@class, 'price') or contains(@class, 'show')] | .//p[contains(@class, 'price')]")
+                    price = price_el.text.strip()
+                except:
+                    pass
+                
+                if name:
+                    count += 1
+                    print(f"   {count}. {name} - {price}")
+            except:
+                continue
+                
+    except Exception as e:
+        print(f"⚠️ Lỗi khi lấy thông tin sản phẩm: {str(e)}")
+
 def test_banner_ad():
     driver = setup_driver()
     wait = WebDriverWait(driver, 60)
@@ -86,6 +160,13 @@ def test_banner_ad():
                     driver.execute_script("arguments[0].click();", nav_element)
                     
                     print(f"✅ Đã click thành công: {nav_item}")
+                    time.sleep(2)
+                    
+                    # --- YÊU CẦU MỚI: Cuộn trang và in thông tin ---
+                    scroll_from_top_to_bottom(driver)
+                    print_promotion_info(driver)
+                    # -----------------------------------------------
+                    
                     time.sleep(2)
                     
                 except Exception as e:

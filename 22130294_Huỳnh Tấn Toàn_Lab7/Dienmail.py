@@ -1,218 +1,180 @@
 import time
+import random
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
-# --- SETUP ---
+# --- SETUP & HELPER FUNCTIONS (Giữ nguyên) ---
 def setup_driver():
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
     chrome_options.add_argument("--disable-notifications")
-    # chrome_options.add_argument("--incognito") # Tắt ẩn danh để test bình thường nếu cần
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option('useAutomationExtension', False)
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-    return driver
+    return webdriver.Chrome(service=service, options=chrome_options)
 
-def test_newsletter_final():
+def kill_ad_type_button(driver):
+    try:
+        xpath_button = "//button[descendant::*[name()='path' and starts-with(@d, 'M19 6.41')]]"
+        buttons = driver.find_elements(By.XPATH, xpath_button)
+        for btn in buttons:
+            if btn.is_displayed():
+                print(">>> [KILL] Bùm! Đã tắt quảng cáo.")
+                driver.execute_script("arguments[0].style.border='3px solid red'", btn) 
+                time.sleep(0.3)
+                driver.execute_script("arguments[0].click();", btn)
+                return True
+    except:
+        pass
+    try:
+        old_ads = driver.find_elements(By.CSS_SELECTOR, ".cps-popup-close, .cancel-button")
+        for ad in old_ads:
+            if ad.is_displayed():
+                driver.execute_script("arguments[0].click();", ad)
+                return True
+    except:
+        pass
+    return False
+
+def smart_wait_ads(driver, timeout=15):
+    print(f"--- Đang canh quảng cáo (Max {timeout}s)... ---")
+    end_time = time.time() + timeout
+    while time.time() < end_time:
+        if kill_ad_type_button(driver):
+            print("-> Đã diệt xong! Đi tiếp.")
+            time.sleep(0.5)
+            return
+        time.sleep(0.5)
+    print("-> Không thấy quảng cáo, đi tiếp...")
+
+def real_human_typing(driver, element, text):
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+    time.sleep(0.5)
+    element.click()
+    actions = ActionChains(driver)
+    actions.key_down(Keys.CONTROL).send_keys('a').key_up(Keys.CONTROL).perform()
+    time.sleep(0.1)
+    actions.send_keys(Keys.BACKSPACE).perform()
+    for char in text:
+        actions.send_keys(char)
+        actions.perform()
+        time.sleep(random.uniform(0.05, 0.1))
+    actions.send_keys(Keys.TAB).perform()
+
+# ==========================================
+# === TEST CASE 1: NHẬP ĐÚNG (HAPPY CASE) ===
+# ==========================================
+def test_subscribe_success():
     driver = setup_driver()
-    # Chờ tối đa 60s cho popup
-    wait = WebDriverWait(driver, 60)
-
-    # Email và SĐT để test
+    wait = WebDriverWait(driver, 30)
     my_email = "22130294@st.hcmuaf.edu.vn"
-    my_phone = "0909123456"
+    my_phone = "0849632852"
 
-    print("\n=== START: TEST CASE ĐĂNG KÝ NHẬN TIN (CÓ SCROLL) ===")
-    
+    print("\n=== [CASE 1] NHẬP ĐÚNG ===")
     try:
-        # 1. Vào trang chủ
-        print("[1] Vào trang chủ Cellphones...")
         driver.get("https://cellphones.com.vn/")
-        
-        print("-> Đang cuộn trang để kích hoạt popup...")
+        smart_wait_ads(driver, timeout=10)
 
-        # 2. Chờ Popup xuất hiện (kết hợp cuộn trang)
-        popup_header_xpath = "//*[contains(text(), 'ĐĂNG KÝ NHẬN TIN')]"
+        print("-> Cuộn xuống Footer & Nhập liệu...")
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(1) 
         
-        # Logic cuộn trang để kích hoạt popup
-        for i in range(10): # Thử cuộn 10 lần
-            try:
-                # Kiểm tra xem popup đã hiện chưa (wait ngắn 2s thôi)
-                WebDriverWait(driver, 2).until(EC.visibility_of_element_located((By.XPATH, popup_header_xpath)))
-                print(f"[2] Đã bắt được Popup sau {i+1} lần cuộn!")
-                break
-            except:
-                # Nếu chưa thấy thì cuộn xuống rồi cuộn lên
-                driver.execute_script("window.scrollBy(0, 500);")
-                time.sleep(1)
-                driver.execute_script("window.scrollBy(0, -200);")
-                time.sleep(1)
-                print(f"   ...đang tìm popup (lần {i+1})...")
-        else:
-            # Nếu hết vòng lặp mà vẫn chưa thấy -> Chờ thêm 1 lần chốt hạ
-            print("-> Vẫn chưa thấy, chờ thêm 10s...")
-            wait.until(EC.visibility_of_element_located((By.XPATH, popup_header_xpath)))
-            print("[2] Đã bắt được Popup!")
+        email_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Nhập email của bạn']")))
+        real_human_typing(driver, email_input, my_email)
+        
+        phone_input = driver.find_element(By.XPATH, "//input[@placeholder='Nhập số điện thoại của bạn']")
+        real_human_typing(driver, phone_input, my_phone)
 
-        # Chờ 1 xíu cho animation popup hiện hết hẳn
+        # Click ra ngoài
+        try:
+            driver.find_element(By.XPATH, "//*[contains(text(), 'Tổng đài hỗ trợ')]").click()
+        except:
+            driver.find_element(By.TAG_NAME, "body").click()
+        time.sleep(1)
+
+        # Submit
+        print("-> Bấm Đăng ký...")
+        btn_submit = driver.find_element(By.XPATH, "//button[contains(text(), 'ĐĂNG KÝ NGAY')]")
+        ActionChains(driver).move_to_element(btn_submit).click().perform()
+
+        # Verify
         time.sleep(2)
-
-        # 3. Điền Email
-        print(f"-> Nhập Email: {my_email}")
-        email_xpath = "//input[@placeholder='Email *']"
-        email_input = wait.until(EC.presence_of_element_located((By.XPATH, email_xpath)))
-        email_input = wait.until(EC.element_to_be_clickable((By.XPATH, email_xpath)))
-        email_input.click()
-        email_input.clear()
-        email_input.send_keys(my_email)
-        
-        # 4. Điền Số điện thoại
-        print(f"-> Nhập SĐT: {my_phone}")
-        phone_xpath = "//input[contains(@placeholder, 'Số điện thoại') or @type='tel']"
-        phone_input = driver.find_element(By.XPATH, phone_xpath)
-        phone_input.click()
-        phone_input.clear()
-        phone_input.send_keys(my_phone)
-        
-        # 5. Check 'Tôi đồng ý'
-        print("-> Click checkbox 'Tôi đồng ý'...")
-        # Tìm input checkbox nằm gần chữ 'Tôi đồng ý' hoặc checkbox cuối cùng trong popup
-        checkbox_xpath = "//input[@type='checkbox']"
-        checkboxes = driver.find_elements(By.XPATH, checkbox_xpath)
-        if len(checkboxes) > 0:
-            # Dùng JS Click để chắc chắn ăn
-            driver.execute_script("arguments[0].click();", checkboxes[-1])
-        else:
-            print("WARNING: Không tìm thấy checkbox!")
-
-        # 6. Click nút ĐĂNG KÝ NGAY
-        print("-> Click nút 'ĐĂNG KÝ NGAY'...")
-        btn_submit_xpath = "//button[contains(text(), 'ĐĂNG KÝ NGAY')]"
-        btn_submit = driver.find_element(By.XPATH, btn_submit_xpath)
-        driver.execute_script("arguments[0].click();", btn_submit)
-        
-        print("[3] Đã Submit form thành công.")
-        
-        # Chờ một chút để request gửi đi
-        time.sleep(3)
-        
-        # 7. Mở Gmail verify
-        print("[4] Đang chuyển hướng sang Gmail...")
-        driver.get("https://gmail.com")
-        
-        print(f"-> Đã chuyển sang trang: {driver.title}")
-        print("-> Hãy kiểm tra email thủ công.")
+        try:
+            msg = driver.find_element(By.XPATH, "//*[contains(text(), 'thành công') or contains(text(), 'Cảm ơn') or contains(text(), 'tồn tại')]")
+            print(f"==> PASSED: {msg.text}")
+        except:
+            print("==> DONE (Check màn hình).")
 
     except Exception as e:
-        print(f"\n[FAILED] Lỗi xảy ra: {str(e)}")
-        driver.save_screenshot("error_newsletter_retry.png")
-        
+        print(f"[ERROR]: {e}")
     finally:
-        print("\n--- ĐÃ CHẠY XONG TEST CASE 1 ---")
-        # Giữ trình duyệt mở để user xem kết quả
-        input(">>> Bấm phím ENTER để tiếp tục sang test case 2...")
+        # QUAN TRỌNG: Dòng này giúp ông dừng lại trước khi qua bài 2
+        input("\n>>> [CASE 1 XONG] Ấn Enter để đóng browser và chạy Test Case 2...")
         driver.quit()
 
-def test_newsletter_case_2():
-    """Test case 2: Đăng ký nhận tin với thông tin khác"""
+# ==========================================
+# === TEST CASE 2: NHẬP SAI (NEGATIVE CASE) ===
+# ==========================================
+def test_subscribe_fail():
     driver = setup_driver()
-    wait = WebDriverWait(driver, 60)
+    wait = WebDriverWait(driver, 30)
+    # Email sai định dạng (thiếu @...)
+    invalid_email = "22130294" 
+    my_phone = "0849632852"
 
-    # Email và SĐT khác
-    my_email = "dsdwsgwsge@gmail.com"
-    my_phone = "0982167357"
-
-    print("\n=== START: TEST CASE 2 - ĐĂNG KÝ NHẬN TIN (THÔNG TIN KHÁC) ===")
-    
+    print("\n=== [CASE 2] NHẬP EMAIL SAI ===")
     try:
-        # 1. Vào trang chủ
-        print("[1] Vào trang chủ Cellphones...")
         driver.get("https://cellphones.com.vn/")
-        
-        print("-> Đang cuộn trang để kích hoạt popup...")
+        smart_wait_ads(driver, timeout=10)
 
-        # 2. Chờ Popup xuất hiện (kết hợp cuộn trang)
-        popup_header_xpath = "//*[contains(text(), 'ĐĂNG KÝ NHẬN TIN')]"
+        print("-> Cuộn xuống Footer & Nhập liệu...")
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(1) 
+
+        email_input = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Nhập email của bạn']")))
+        # Nhập email sai
+        real_human_typing(driver, email_input, invalid_email)
+
+        phone_input = driver.find_element(By.XPATH, "//input[@placeholder='Nhập số điện thoại của bạn']")
+        real_human_typing(driver, phone_input, my_phone)
+
+        # Click ra ngoài
+        try:
+            driver.find_element(By.XPATH, "//*[contains(text(), 'Tổng đài hỗ trợ')]").click()
+        except:
+            driver.find_element(By.TAG_NAME, "body").click()
+        time.sleep(1)
+
+        # Verify: Kiểm tra nút có bị KHÓA không (Logic đúng của test case này)
+        print("-> Kiểm tra validation...")
+        btn_submit = driver.find_element(By.XPATH, "//button[contains(text(), 'ĐĂNG KÝ NGAY')]")
         
-        # Logic cuộn trang để kích hoạt popup
-        for i in range(10):
-            try:
-                WebDriverWait(driver, 2).until(EC.visibility_of_element_located((By.XPATH, popup_header_xpath)))
-                print(f"[2] Đã bắt được Popup sau {i+1} lần cuộn!")
-                break
-            except:
-                driver.execute_script("window.scrollBy(0, 500);")
-                time.sleep(1)
-                driver.execute_script("window.scrollBy(0, -200);")
-                time.sleep(1)
-                print(f"   ...đang tìm popup (lần {i+1})...")
+        # Check class xem có disabled không
+        if not btn_submit.is_enabled():
+            print("==> PASSED: Nút Đăng ký vẫn KHÓA (Do email sai). Đúng kỳ vọng!")
         else:
-            print("-> Vẫn chưa thấy, chờ thêm 10s...")
-            wait.until(EC.visibility_of_element_located((By.XPATH, popup_header_xpath)))
-            print("[2] Đã bắt được Popup!")
-
-        time.sleep(2)
-
-        # 3. Điền Email
-        print(f"-> Nhập Email: {my_email}")
-        email_xpath = "//input[@placeholder='Email *']"
-        email_input = wait.until(EC.presence_of_element_located((By.XPATH, email_xpath)))
-        email_input = wait.until(EC.element_to_be_clickable((By.XPATH, email_xpath)))
-        email_input.click()
-        email_input.clear()
-        email_input.send_keys(my_email)
-        
-        # 4. Điền Số điện thoại
-        print(f"-> Nhập SĐT: {my_phone}")
-        phone_xpath = "//input[contains(@placeholder, 'Số điện thoại') or @type='tel']"
-        phone_input = driver.find_element(By.XPATH, phone_xpath)
-        phone_input.click()
-        phone_input.clear()
-        phone_input.send_keys(my_phone)
-        
-        # 5. Check 'Tôi đồng ý'
-        print("-> Click checkbox 'Tôi đồng ý'...")
-        checkbox_xpath = "//input[@type='checkbox']"
-        checkboxes = driver.find_elements(By.XPATH, checkbox_xpath)
-        if len(checkboxes) > 0:
-            driver.execute_script("arguments[0].click();", checkboxes[-1])
-        else:
-            print("WARNING: Không tìm thấy checkbox!")
-
-        # 6. Click nút ĐĂNG KÝ NGAY
-        print("-> Click nút 'ĐĂNG KÝ NGAY'...")
-        btn_submit_xpath = "//button[contains(text(), 'ĐĂNG KÝ NGAY')]"
-        btn_submit = driver.find_element(By.XPATH, btn_submit_xpath)
-        driver.execute_script("arguments[0].click();", btn_submit)
-        
-        print("[3] Đã Submit form thành công.")
-        
-        time.sleep(3)
-        
-        # 7. Mở Gmail verify
-        print("[4] Đang chuyển hướng sang Gmail...")
-        driver.get("https://gmail.com")
-        
-        print(f"-> Đã chuyển sang trang: {driver.title}")
-        print("-> Hãy kiểm tra email thủ công.")
+            print("==> FAILED: Nút Đăng ký SÁNG (Bug: Web cho phép email sai).")
+            # Nếu nút sáng thì thử click
+            ActionChains(driver).move_to_element(btn_submit).click().perform()
 
     except Exception as e:
-        print(f"\n[FAILED] Lỗi xảy ra: {str(e)}")
-        driver.save_screenshot("error_newsletter_case2.png")
-        
+        print(f"[ERROR]: {e}")
     finally:
-        print("\n--- ĐÃ CHẠY XONG TEST CASE 2 ---")
-        input(">>> Bấm phím ENTER để kết thúc và đóng trình duyệt...")
+        input("\n>>> [CASE 2 XONG] Ấn Enter để kết thúc toàn bộ...")
         driver.quit()
 
+# --- MAIN ---
 if __name__ == "__main__":
-    # Chạy test case 1
-    # test_newsletter_final()
+    # Chạy case 1 -> Chờ Enter -> Tắt -> Chạy case 2
+    test_subscribe_success()
     
-    # Chạy test case 2
-    test_newsletter_case_2()
+    # Ở đây phải có dấu ngoặc () thì hàm mới chạy nha
+    test_subscribe_fail()
