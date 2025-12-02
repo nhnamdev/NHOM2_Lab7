@@ -1,0 +1,2379 @@
+{
+  "config": {
+    "configFile": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\playwright.config.js",
+    "rootDir": "D:/Vibeconding/automation_git_lab8/NHOM2_Lab7/playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/html",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/json/results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Vibeconding/automation_git_lab8/NHOM2_Lab7/playwright/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Vibeconding/automation_git_lab8/NHOM2_Lab7/playwright/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth\\login.spec.js",
+      "file": "auth/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication Tests",
+          "file": "auth/login.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-AUTH-01: Đăng nhập thành công với credentials hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15853,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Đăng nhập thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:35:12.526Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-2d802dca11a31aa6aef0",
+              "file": "auth/login.spec.js",
+              "line": 18,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTH-02: Đăng nhập thất bại với số điện thoại sai",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8717,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Test PASSED: Không cho phép đăng nhập với SĐT sai\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:35:28.656Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-7e0be619a94d3bd4056a",
+              "file": "auth/login.spec.js",
+              "line": 28,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTH-03: Đăng nhập thất bại với mật khẩu sai",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8714,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Test PASSED: Không cho phép đăng nhập với mật khẩu sai\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:35:37.392Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-0bb9f4013ac503778826",
+              "file": "auth/login.spec.js",
+              "line": 47,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTH-04: Kiểm tra validation form đăng nhập",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8283,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Test PASSED: Form validation hoạt động\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:35:46.121Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-6befc9603c13bfe72386",
+              "file": "auth/login.spec.js",
+              "line": 66,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTH-05: Kiểm tra đăng nhập bằng Google (redirect)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8633,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Test PASSED: Redirect đến Google login thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:35:54.420Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-afaa88e2565ce9b4b121",
+              "file": "auth/login.spec.js",
+              "line": 85,
+              "column": 3
+            },
+            {
+              "title": "TC-AUTH-06: Kiểm tra đăng nhập bằng Zalo (redirect)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9659,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Test PASSED: Redirect đến Zalo login thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:36:03.071Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "626483fc77c4bb72c38c-9ebeac0b8d8de0e3bdf8",
+              "file": "auth/login.spec.js",
+              "line": 105,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cart\\add-to-cart.spec.js",
+      "file": "cart/add-to-cart.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cart - Add to Cart Tests",
+          "file": "cart/add-to-cart.spec.js",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CART-AddToCart-01: Thêm sản phẩm vào giỏ từ trang chi tiết",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 46641,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Thêm sản phẩm vào giỏ thành công\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 1 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:36:12.766Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8750a94c3f5193d3ae8b-23aaacb4d02626e438f6",
+              "file": "cart/add-to-cart.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "CART-AddToCart-02: Thêm cùng sản phẩm 2 lần → số lượng tăng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 62607,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "Số lượng sản phẩm = 2\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Số lượng sản phẩm = 2\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 1 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:36:59.431Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8750a94c3f5193d3ae8b-1f9002b64641b77d4a45",
+              "file": "cart/add-to-cart.spec.js",
+              "line": 40,
+              "column": 3
+            },
+            {
+              "title": "CART-AddToCart-03: Không hiển thị nút với sản phẩm hết hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 33776,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 11 Pro Max 256GB I Chính hãng VN/A\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 11 Pro Max 256GB I Chính hãng VN/A\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ⚠ Không có nút \"Thêm vào giỏ hàng\" (có thể hết hàng hoặc giá liên hệ)\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Không hiển thị nút thêm vào giỏ với sản phẩm hết hàng\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 0 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:38:02.053Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8750a94c3f5193d3ae8b-a5ea581efab0d6817cf6",
+              "file": "cart/add-to-cart.spec.js",
+              "line": 68,
+              "column": 3
+            },
+            {
+              "title": "CART-AddToCart-04: Không hiển thị nút với sản phẩm \"Giá Liên Hệ\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 34753,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"Macbook Pro 14 M3 Max 128GB - 8TB | Chính hãng Apple Việt Nam\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: Macbook Pro 14 M3 Max 128GB - 8TB | Chính hãng Apple Việt Nam\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ⚠ Không có nút \"Thêm vào giỏ hàng\" (có thể hết hàng hoặc giá liên hệ)\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Không hiển thị nút thêm vào giỏ với sản phẩm \"Giá Liên Hệ\"\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 0 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:38:35.847Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8750a94c3f5193d3ae8b-727549047367a14502fb",
+              "file": "cart/add-to-cart.spec.js",
+              "line": 80,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cart\\delete-item.spec.js",
+      "file": "cart/delete-item.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cart - Delete Item Tests",
+          "file": "cart/delete-item.spec.js",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CART-DeleteItem-01: Xóa sản phẩm khỏi giỏ hàng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 42769,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "  Số sản phẩm ban đầu: 1\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "  Số sản phẩm sau khi xóa: 0\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Xóa sản phẩm thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:39:10.630Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "822ef0f23f8fdc0677f1-f0fea8241f781f28d113",
+              "file": "cart/delete-item.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "CART-DeleteItem-02: Xóa tất cả sản phẩm → giỏ hàng trống",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 42787,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Giỏ hàng đã trống\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:39:53.414Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "822ef0f23f8fdc0677f1-166388bc62981786c954",
+              "file": "cart/delete-item.spec.js",
+              "line": 45,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cart\\update-quantity.spec.js",
+      "file": "cart/update-quantity.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cart - Update Quantity Tests",
+          "file": "cart/update-quantity.spec.js",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CART-UpdateQty-01: Tăng số lượng sản phẩm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 48083,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "  Số lượng ban đầu: 1\n"
+                        },
+                        {
+                          "text": "✓ Đã tăng số lượng\n"
+                        },
+                        {
+                          "text": "  Số lượng hiện tại: 2\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Số lượng tăng từ 1 lên 2\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 1 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:40:36.229Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "78533fb1497959c3c645-d36f089cb6e757c8a301",
+              "file": "cart/update-quantity.spec.js",
+              "line": 31,
+              "column": 3
+            },
+            {
+              "title": "CART-UpdateQty-02: Giảm số lượng sản phẩm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 52029,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã tăng số lượng\n"
+                        },
+                        {
+                          "text": "  Số lượng hiện tại: 2\n"
+                        },
+                        {
+                          "text": "  Số lượng hiện tại: 2\n"
+                        },
+                        {
+                          "text": "✓ Đã giảm số lượng\n"
+                        },
+                        {
+                          "text": "  Số lượng hiện tại: 1\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Số lượng giảm từ 2 xuống 1\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 1 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:41:24.329Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "78533fb1497959c3c645-2222f7181f7f62be8e47",
+              "file": "cart/update-quantity.spec.js",
+              "line": 51,
+              "column": 3
+            },
+            {
+              "title": "CART-UpdateQty-03: Không cho giảm số lượng xuống dưới 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47493,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "  Số lượng hiện tại: 1\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Không cho giảm số lượng xuống dưới 1\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 1 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:42:16.375Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "78533fb1497959c3c645-6eb68dea0df38edb698f",
+              "file": "cart/update-quantity.spec.js",
+              "line": 76,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "cart\\view-cart.spec.js",
+      "file": "cart/view-cart.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cart - View Cart Tests",
+          "file": "cart/view-cart.spec.js",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "CART-ViewCart-01: Xem giỏ hàng khi đã có sản phẩm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 47119,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: iPhone 14 (128GB)  | Chính hãng VN/A-Xanh\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Có 1 sản phẩm trong giỏ\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 1 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:43:03.895Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "13679e7b6174a2153921-edf8ab002841ac6210a2",
+              "file": "cart/view-cart.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "CART-ViewCart-02: Hiển thị đầy đủ thông tin sản phẩm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 45838,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0858200725\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "🛒 Thêm sản phẩm \"iPhone 14\" vào giỏ hàng...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập từ khóa: iPhone 14\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click vào sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm vào giỏ hàng\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Hiển thị đầy đủ thông tin sản phẩm\n"
+                        },
+                        {
+                          "text": "🗑️ Đang xóa 1 sản phẩm trong giỏ hàng...\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sản phẩm khỏi giỏ hàng\n"
+                        },
+                        {
+                          "text": "✓ Đã xóa sạch giỏ hàng\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:43:51.030Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "13679e7b6174a2153921-ef922a865ea2689641bf",
+              "file": "cart/view-cart.spec.js",
+              "line": 47,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "comparison\\compare-products.spec.js",
+      "file": "comparison/compare-products.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Product Comparison Tests",
+          "file": "comparison/compare-products.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "COMPARE-01: So sánh sản phẩm cùng loại thành công",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 41517,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 15s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "📊 Test so sánh sản phẩm\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"Samsung Galaxy S24 Ultra\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Đã vào trang chi tiết sản phẩm\n"
+                        },
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 5s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "  ✓ Đã mở popup so sánh\n"
+                        },
+                        {
+                          "text": "  ⚠️ Không chọn được sản phẩm 1\n"
+                        },
+                        {
+                          "text": "  ⚠️ Không chọn được sản phẩm 2\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click \"So sánh ngay\"\n"
+                        },
+                        {
+                          "text": "  ✓ URL: https://cellphones.com.vn/so-sanh/samsung-galaxy-s24-ultra\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: So sánh sản phẩm thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:44:36.892Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cdc65641fc44ba5fc40-415302d1ac063795566b",
+              "file": "comparison/compare-products.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "COMPARE-02: Kiểm tra danh sách sản phẩm so sánh cùng loại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 31118,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 10s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"iPhone 15\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 5s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 10 sản phẩm để so sánh\n"
+                        },
+                        {
+                          "text": "    1. Điện thoại iPhone 16 Pro Max 256GB\n"
+                        },
+                        {
+                          "text": "    2. OPPO Find X9 12GB 256GB\n"
+                        },
+                        {
+                          "text": "    3. iPhone 17 256GB | Chính hãng\n"
+                        },
+                        {
+                          "text": "    4. iPhone Air 256GB | Chính hãng\n"
+                        },
+                        {
+                          "text": "    5. Samsung Galaxy S25 Ultra 12GB 256GB\n"
+                        },
+                        {
+                          "text": "  ✓ Danh sách chứa điện thoại: true\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Kiểm tra danh sách sản phẩm so sánh\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:45:18.429Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cdc65641fc44ba5fc40-f7de6fe10bc621d8f0cc",
+              "file": "comparison/compare-products.spec.js",
+              "line": 88,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "newsletter\\subscribe.spec.js",
+      "file": "newsletter/subscribe.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Newsletter Subscription Tests",
+          "file": "newsletter/subscribe.spec.js",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "NEWSLETTER-01: Đăng ký thành công với email và SĐT hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 35030,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 10s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "📧 Đăng ký newsletter với thông tin hợp lệ\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập email: 22130294@st.hcmuaf.edu.vn\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập SĐT: 0849632852\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút Đăng ký\n"
+                        },
+                        {
+                          "text": "  ✓ Thông báo: Đăng ký nhận tin thành công\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Đăng ký newsletter thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:45:49.587Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e482539e674f178415-0dc060d349c7e9bc78f9",
+              "file": "newsletter/subscribe.spec.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "NEWSLETTER-02: Đăng ký thất bại với email không hợp lệ",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 27778,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 10s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "📧 Đăng ký newsletter với email không hợp lệ\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập email sai: 22130294\n"
+                        },
+                        {
+                          "text": "  ⚠️ Nút Đăng ký vẫn sáng (có thể là bug)\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Validation email hoạt động\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:46:24.628Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e482539e674f178415-cd978705b8a37cbc0a01",
+              "file": "newsletter/subscribe.spec.js",
+              "line": 59,
+              "column": 3
+            },
+            {
+              "title": "NEWSLETTER-03: Kiểm tra validation khi để trống email",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22135,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 10s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Không cho submit khi thiếu email\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:46:52.425Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "73e482539e674f178415-2c935d413fabb1daee42",
+              "file": "newsletter/subscribe.spec.js",
+              "line": 100,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "payment\\checkout.spec.js",
+      "file": "payment/checkout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Payment and Discount Tests",
+          "file": "payment/checkout.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "PAYMENT-01: Kiểm tra flow thanh toán sản phẩm",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 43064,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "💳 Test flow thanh toán\n"
+                        },
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0334286049\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thêm sản phẩm vào giỏ\n"
+                        },
+                        {
+                          "text": "  ✓ Đã vào trang giỏ hàng\n"
+                        },
+                        {
+                          "text": "  ⚠️ Không tìm thấy nút Mua ngay\n"
+                        },
+                        {
+                          "text": "  ⚠️ Lỗi trong flow thanh toán: page.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#payment-info-method-shipping')\u001b[22m\n\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:47:14.591Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bc5ce3f1d05e7f14fff8-5a6b16da8c4997dfe8eb",
+              "file": "payment/checkout.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "PAYMENT-02: Kiểm tra áp dụng mã giảm giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 30355,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🎫 Test áp dụng mã giảm giá\n"
+                        },
+                        {
+                          "text": "🔐 Bắt đầu đăng nhập...\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập số điện thoại: 0334286049\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập mật khẩu\n"
+                        },
+                        {
+                          "text": "  ✓ Đã click nút đăng nhập\n"
+                        },
+                        {
+                          "text": "✅ Đăng nhập thành công!\n"
+                        },
+                        {
+                          "text": "  ℹ️ Không tìm thấy ô nhập mã hoặc không có mã hợp lệ\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Kiểm tra chức năng mã giảm giá hoàn tất\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:47:57.668Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bc5ce3f1d05e7f14fff8-e2c9b30a0f7402a0aaec",
+              "file": "payment/checkout.spec.js",
+              "line": 103,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "search\\filter-products.spec.js",
+      "file": "search/filter-products.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Search - Filter Products Tests",
+          "file": "search/filter-products.spec.js",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "FILTER-01: Lọc sản phẩm theo danh mục và hãng",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24478,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 10s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "📱 Vào danh mục Điện thoại\n"
+                        },
+                        {
+                          "text": "📱 Vào danh mục: /mobile.html\n"
+                        },
+                        {
+                          "text": "  ✓ Đã vào danh mục\n"
+                        },
+                        {
+                          "text": "🏷️ Chọn hãng Apple\n"
+                        },
+                        {
+                          "text": "🏷️ Chọn hãng: Apple\n"
+                        },
+                        {
+                          "text": "  ✓ Đã chọn hãng Apple\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm Apple\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Lọc theo danh mục và hãng thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:48:28.051Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "42f81397cc8f8fdb9e57-c492d507a8bae664df2a",
+              "file": "search/filter-products.spec.js",
+              "line": 12,
+              "column": 3
+            },
+            {
+              "title": "FILTER-02: Lọc sản phẩm theo khoảng giá",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 27566,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 10s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "📱 Vào danh mục: /mobile.html\n"
+                        },
+                        {
+                          "text": "  ✓ Đã vào danh mục\n"
+                        },
+                        {
+                          "text": "🏷️ Chọn hãng: Apple\n"
+                        },
+                        {
+                          "text": "  ✓ Đã chọn hãng Apple\n"
+                        },
+                        {
+                          "text": "💰 Lọc giá: 5,000 - 10,000\n"
+                        },
+                        {
+                          "text": "💰 Lọc giá: 5000 - 10000\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập giá tối thiểu: 5000\n"
+                        },
+                        {
+                          "text": "  ✓ Đã nhập giá tối đa: 10000\n"
+                        },
+                        {
+                          "text": "  ✓ Đã áp dụng bộ lọc giá\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 4 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 4 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 4 sản phẩm trong khoảng giá\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Lọc theo giá thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:48:52.544Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "42f81397cc8f8fdb9e57-2b2f2f0951b753bc08ad",
+              "file": "search/filter-products.spec.js",
+              "line": 38,
+              "column": 3
+            },
+            {
+              "title": "FILTER-03: Lọc với khoảng giá không hợp lệ (min > max)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24123,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "⏳ Đang quét quảng cáo trong 10s...\n"
+                        },
+                        {
+                          "text": "✓ Không phát hiện quảng cáo\n"
+                        },
+                        {
+                          "text": "📱 Vào danh mục: /mobile.html\n"
+                        },
+                        {
+                          "text": "  ✓ Đã vào danh mục\n"
+                        },
+                        {
+                          "text": "🏷️ Chọn hãng: Apple\n"
+                        },
+                        {
+                          "text": "  ✓ Đã chọn hãng Apple\n"
+                        },
+                        {
+                          "text": "  ✓ Hệ thống xử lý khoảng giá không hợp lệ\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Xử lý khoảng giá không hợp lệ\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:49:20.122Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "42f81397cc8f8fdb9e57-a336bc334749b48250c4",
+              "file": "search/filter-products.spec.js",
+              "line": 59,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "search\\search-keywords.spec.js",
+      "file": "search/search-keywords.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Search - Keyword Search Tests",
+          "file": "search/search-keywords.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SEARCH-Keywords-01: Tìm kiếm với nhiều keywords từ file",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 65679,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "📋 Đọc được 5 keywords từ file\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"iPhone 13\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"iPhone 13\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: iPhone 13 128GB | Chính hãng VN/A\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"iPhone\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"iPhone\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: Điện thoại iPhone 16 Pro Max 256GB\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"ABCXYZ123\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"ABCXYZ123\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 1 sản phẩm với selector: div[class*=\"product\"]\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 0 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 0 sản phẩm\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"Samsung Galaxy\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"Samsung Galaxy\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: Samsung Galaxy Z Flip7 12GB 256GB\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"Macbook\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"Macbook\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: Apple MacBook Air M2 2024 8CPU 8GPU 16GB 256GB I Chính hãng Apple Việt Nam\n"
+                        },
+                        {
+                          "text": "\n✅ Test PASSED: Tìm kiếm với tất cả keywords thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:49:44.274Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\test-results\\search-search-keywords-Sea-5e664--với-nhiều-keywords-từ-file-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\test-results\\search-search-keywords-Sea-5e664--với-nhiều-keywords-từ-file-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\test-results\\search-search-keywords-Sea-5e664--với-nhiều-keywords-từ-file-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\Vibeconding\\automation_git_lab8\\NHOM2_Lab7\\playwright\\test-results\\search-search-keywords-Sea-5e664--với-nhiều-keywords-từ-file-chromium\\trace.zip"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 59431,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📋 Đọc được 5 keywords từ file\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"iPhone 13\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"iPhone 13\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: iPhone 13 128GB | Chính hãng VN/A\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"iPhone\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"iPhone\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: Điện thoại iPhone 16 Pro Max 256GB\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"ABCXYZ123\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"ABCXYZ123\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 1 sản phẩm với selector: div[class*=\"product\"]\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 0 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 0 sản phẩm\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"Samsung Galaxy\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"Samsung Galaxy\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: Samsung Galaxy Z Flip7 12GB 256GB\n"
+                        },
+                        {
+                          "text": "\n🔍 Tìm kiếm: \"Macbook\"\n"
+                        },
+                        {
+                          "text": "🔍 Tìm kiếm: \"Macbook\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 5 sản phẩm\n"
+                        },
+                        {
+                          "text": "  Sản phẩm đầu tiên: Apple MacBook Air M2 2024 8CPU 8GPU 16GB 256GB I Chính hãng Apple Việt Nam\n"
+                        },
+                        {
+                          "text": "\n✅ Test PASSED: Tìm kiếm với tất cả keywords thành công\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-12-02T12:50:59.354Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "ee54d2246e8eafe877c9-e7a5021ab8b6e2b428d8",
+              "file": "search/search-keywords.spec.js",
+              "line": 13,
+              "column": 3
+            },
+            {
+              "title": "SEARCH-Keywords-02: Tìm kiếm với keyword không tồn tại",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9827,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔍 Tìm kiếm: \"ABCXYZ123\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 1 sản phẩm với selector: div[class*=\"product\"]\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 0 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "  Số kết quả: 0\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Xử lý keyword không tồn tại\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:51:59.084Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ee54d2246e8eafe877c9-4f4d7315404aa2342a4e",
+              "file": "search/search-keywords.spec.js",
+              "line": 48,
+              "column": 3
+            },
+            {
+              "title": "SEARCH-Keywords-03: Tìm kiếm với keyword phổ biến",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10589,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔍 Tìm kiếm: \"iPhone\"\n"
+                        },
+                        {
+                          "text": "  ✓ Đã thực hiện tìm kiếm\n"
+                        },
+                        {
+                          "text": "  ✓ Tìm thấy 20 sản phẩm với selector: .product-item\n"
+                        },
+                        {
+                          "text": "  ✓ Lấy được 5 tên sản phẩm\n"
+                        },
+                        {
+                          "text": "✅ Test PASSED: Tìm thấy 5 sản phẩm iPhone\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-02T12:52:08.929Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ee54d2246e8eafe877c9-bf4029a2889b1bd650db",
+              "file": "search/search-keywords.spec.js",
+              "line": 64,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-12-02T12:35:11.134Z",
+    "duration": 1028973.909,
+    "expected": 29,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 1
+  }
+}
